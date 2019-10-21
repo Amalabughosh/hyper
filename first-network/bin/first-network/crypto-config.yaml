@@ -1,0 +1,70 @@
+
+OrdererOrgs:
+  # ---------------------------------------------------------------------------
+  # Orderer
+  # ---------------------------------------------------------------------------
+  - Name: Orderer
+    Domain: example.com
+    # ---------------------------------------------------------------------------
+    # Specs - See PeerOrgs below for complete description
+    # ---------------------------------------------------------------------------
+    Specs:
+      - Hostname: orderer
+      - Hostname: orderer2
+      - Hostname: orderer3
+      - Hostname: orderer4
+      - Hostname: orderer5
+      - Hostname: orderer6
+      - Hostname: orderer7
+
+PeerOrgs:
+ # ---------------------------------------------------------------------------
+  # Org1: See Org1 for full specification 
+  # ---------------------------------------------------------------------------
+  - Name: Org1
+    Domain: org1.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 3
+    Users:
+      Count: 2
+ # ---------------------------------------------------------------------------
+  # Org2: See Org1 for full specification 
+  # ---------------------------------------------------------------------------
+  - Name: Org2
+    Domain: org2.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 2
+ # ---------------------------------------------------------------------------
+  # Org3: See Org1 for full specification 
+  # ---------------------------------------------------------------------------
+  - Name: Org3
+    Domain: org3.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 4
+    Users:
+      Count: 2
+ # ---------------------------------------------------------------------------
+  # Org4: See Org1 for full specification 
+  # ---------------------------------------------------------------------------
+  - Name: Org4
+    Domain: org4.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 5
+    Users:
+      Count: 2
+ # ---------------------------------------------------------------------------
+  # Org5: See Org1 for full specification 
+  # ---------------------------------------------------------------------------
+  - Name: Org5
+    Domain: org5.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 3
+    Users:
+      Count: 2
