@@ -1,0 +1,32 @@
+<div class="main" style="margin-right:200px;">
+
+    <script type='text/javascript'>
+        function addFields(){
+            // Number of inputs to create
+            var number = document.getElementById("orgadd").value;
+            // Container <div> where dynamic content will be placed
+            var container = document.getElementById("container1");
+            // Clear previous contents of the container
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            for (i=0;i<number;i++){
+                // Append a node with a random text
+                container.appendChild(document.createTextNode("Enter the  number of peer in organization" + (i+1)));
+                // Create an <input> element, set its type and name attributes
+                var input = document.createElement("input");
+                input.type = "text";
+                input.name = "Number of peer in organization" + i;
+                container.appendChild(input);
+                // Append a line break 
+                container.appendChild(document.createElement("br"));
+            }
+        }
+    </script>
+ <div>
+  <label class="control-label" style="front-size: 24px;">Enter the  number of organization that you want:</label>
+  <input type="text" id="orgadd" , style="font-size:24px">
+  <div id="container1"/>
+  </select>
+
+  </div>
